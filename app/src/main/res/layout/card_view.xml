@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_cards"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    app:cardBackgroundColor="#9E9E9E"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4sp">
+
+        <ImageView
+            android:id="@+id/imgPet"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="4dp"
+            android:contentDescription="Imagen de mascota" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#595858"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnHueso"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="false"
+                android:backgroundTint="#00FFFFFF"
+                android:clickable="false"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bone_empty" />
+
+            <TextView
+                android:id="@+id/nombrePet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="8sp"
+                android:text="Chueca"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoText="false"
+                android:gravity="center"
+                android:paddingRight="8sp"
+                android:shadowColor="#000000"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#2B2B2B"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnHueso2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="false"
+                android:backgroundTint="#00F3EEEE"
+                android:clickable="false"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                android:tint="#FF9800"
+                app:srcCompat="@drawable/bone_solid" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
